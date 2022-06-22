@@ -5,6 +5,12 @@
   }
 
   /*HEADER*/
+.contaner{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
 .logo-header{
 	color: #212121;
 	font-family: 'Raleway';
@@ -20,8 +26,21 @@
 ul {
     list-style: none;
     }
+.site-nav{
+    display: flex;
+    
+}
+.site-nav .nav-head{
+    display: block;
+    padding: 0 25px;
+    
+}
+    .nav-head{
+    display: flex;
+    align-items: center;
+}
 .nav-head{
-	color: var(--title-color);
+    color: var(--title-color);
 	font-family: 'Roboto';
 	font-weight: 500;
 	font-size: 14px;
@@ -35,8 +54,12 @@ ul {
 .nav-head:focus {
 	color: #2196F3;
 }
+.nav-contact + .nav-contact{
+    margin-left: 50px;
+}
 .nav-contact{
     color: var(--paragraph-color);
+    margin-left: auto;
 }
 .nav-contact:hover,
 .nav-contact:focus{
