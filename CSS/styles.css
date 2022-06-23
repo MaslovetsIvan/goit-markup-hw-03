@@ -19,6 +19,8 @@
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo-web{
 	color: #2196F3;
@@ -76,8 +78,12 @@ body{
 	letter-spacing: 0.03em;
 }
 .hero{
-	background: #2F303A;
+    display: flex;
+    justify-content: center;
+    background: #2F303A;
+    
 }
+
 .hero-title{
 	color: #FFFFFF;
 	font-weight: 900;
@@ -86,8 +92,12 @@ body{
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+    margin-top: 200px;
+    margin-bottom: 40px;
 }
-.hero button{
+
+
+.hero-button{
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -96,6 +106,8 @@ body{
 	color: #FFFFFF;
 	text-align: center;
     padding: 10px 32px;
+    margin-bottom: 200px;
+   
     }
 .hidden{
     visibility:hidden;
@@ -161,9 +173,17 @@ body{
     line-height: 1.88;
     letter-spacing: 0.03em; 
 }
+/* .footer-inform{
+    display: block;
+} */
 footer{
     background: #2F303A;
    
+}
+.logo-footer{
+    display: block;
+    /* margin-top: 60px;
+    margin-bottom: 20px; */
 }
 .logo-footer{
     color: #FFFFFF;
@@ -173,6 +193,7 @@ footer{
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	text-decoration: none;
+
 }
 .nav-footer{
     font-style: normal;
@@ -183,6 +204,10 @@ footer{
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+.nav-address{
+    display: flex;
+    flex-direction: column;
 }
 .nav-footer:hover,
 .nav-footer:focus{
