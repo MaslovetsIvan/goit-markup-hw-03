@@ -1,3 +1,6 @@
+ul{
+    padding-inline-start:0px;
+}
 :root {
 	--title-color: #212121;
 	--paragraph-color: #757575 ;
@@ -6,10 +9,13 @@
 
   /*HEADER*/
 .contaner{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+}
+.page-header{
+    border: 1px solid #ECECEC ;
 }
 .logo-header{
 	color: #212121;
@@ -48,7 +54,7 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-   
+
     text-decoration:none ;
     
 }
@@ -93,7 +99,7 @@ body{
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
     margin-top: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -106,11 +112,11 @@ body{
 	color: #FFFFFF;
 	text-align: center;
     padding: 10px 32px;
+    border: 0;
     display: flex;
     margin: auto;
-    margin-bottom: 200px;;
-   
-    }
+    margin-bottom: 200px;
+}
 
 .hidden{
     visibility:hidden;
@@ -118,9 +124,9 @@ body{
     padding: 0;
 }
 .benefits-item{
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
 }
 .benefits-item-submenu{
     width: 270px;
@@ -130,13 +136,25 @@ body{
     text-transform:uppercase;
     font-size: 14px;
     line-height: 1.14;
+    margin: 0 0 10px 0 ;
 }
+.submenu-titel-text{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.46;
+    margin: 0;
+}
+
 .activities-item{
     display: flex;
     margin-bottom: 94px;
+    
 }
 .activities-img + .activities-img{
 margin-left: 30px;
+
+
 }
 .basic-title{
     color: var(--title-color);
@@ -145,8 +163,26 @@ margin-left: 30px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 94px;
+    margin: 0 0 50px 0;
 }
+.team-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50px; 
+}
+.team-container-item{
+    background-color: #FFFFFF;
+}
+.team-container-item+.team-container-item{
+    margin-left: 30px;
+}
+
+
 .team{
+    background-color: #F5F4FA;
     color: var(--paragraph-color);
     font-weight: 400;
     font-size: 16px;
@@ -158,7 +194,28 @@ margin-left: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
+.team-container-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*Парфолио*/
+.work-contaner{
+    display: flex;
+    justify-content: center;
+}
+
+.work-contaner-item{
+
+}
+.work-contaner-item:not(:last-child){
+    margin-right: 8px;
+}
+
 .filter-button{
     font-family:Roboto;
     background:  #F5F4FA;
@@ -168,14 +225,30 @@ margin-left: 30px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     border: 0;
-    
+    border-radius: 4px;
+    margin-bottom: 50px;
+    padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus{
     background: var(--button-COLOR);
     color: #FFFFFF;
 }
+.projects-contanet{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px 94px -15px;
+}
+.projects-contanet-item{
+    border: 1px solid #eee;
+    margin: 15px;
+}
+.projects-contanet-item:nth-child(3n+3){
+    margin-right: 0;
+}
+
 .catalog{
+    display: grid;
     text-decoration: none;
     }
 .catalog-title{
@@ -184,19 +257,22 @@ margin-left: 30px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    }
+    margin: 0;
+    padding: 20px 24px 4px 24px;
+}  
 
 .catalog-type{
     color: var(--paragraph-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0 24px 20px 24px;    
 }
-
 footer{
     background: #2F303A;
-  }
+}
 .footer-info{
     display: flex;
     flex-direction: column
