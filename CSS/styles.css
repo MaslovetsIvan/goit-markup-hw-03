@@ -68,6 +68,9 @@ ul {
 .nav-head:focus {
 	color: #2196F3;
 }
+.site-nav.nav-head:active{
+	color: #2196F3;
+    }
 .nav-contact + .nav-contact{
     margin-left: 50px;
 }
