@@ -14,6 +14,10 @@ ul{
     padding-right: 15px;
     margin: auto;
 }
+.heder-contaner{
+    display: flex;
+    align-items: center;
+}
 .page-header{
     border: 1px solid #ECECEC ;
 }
@@ -45,6 +49,7 @@ ul {
     display: block;
     
 }
+
 .nav-head{
     display: flex;
     align-items: center;
@@ -63,7 +68,6 @@ ul {
 
 }
 
-
 .nav-head:hover,
 .nav-head:focus {
 	color: #2196F3;
@@ -74,16 +78,24 @@ ul {
 .nav-contact + .nav-contact{
     margin-left: 50px;
 }
+
+.header-nav-contact{
+    display: flex;
+    align-items: flex-start;
+}
 .nav-contact{
+
     text-decoration: none;
     color: var(--paragraph-color);
-    margin-left: auto;
+    /**/
 }
 .nav-contact:hover,
 .nav-contact:focus{
     color: #2196F3;
 }
-
+.page{
+    margin-left: auto;
+}
 
 body{ 
 	font-family: 'Roboto', sans-serif;
@@ -128,12 +140,13 @@ body{
 }
 
 .hidden{
-    visibility:hidden;
+    display: none;
+    /*visibility:hidden;*/
     margin: 0;
     padding: 0;
 }
 .benefits{
-    padding-top: 70px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .benefits-item{
@@ -164,6 +177,7 @@ body{
 }
 .activities-item{
     display: flex;
+    margin: 0;
 
     
 }
@@ -229,11 +243,11 @@ margin-left: 30px;
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .work{
-    padding-top: 70px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .work-contaner-item:not(:last-child){
@@ -330,7 +344,7 @@ footer{
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
     
 }
 .nav-address{
@@ -346,7 +360,7 @@ footer{
     color: #FFFFFF;
     text-decoration: none;
     font-style: normal;
-    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 .nav-footer-city:hover,
 .nav-footer-city:focus{
